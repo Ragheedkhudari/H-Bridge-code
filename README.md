@@ -41,23 +41,23 @@ This documentataion show to how whrite code of H-Bridge.
   delay(3000);                 // stand still for 3 seconds            `
 }
 
-void motor_forward(void)       // the function that will cause the motor to rotate cw
+`       void motor_forward(void)       // the function that will cause the motor to rotate cw            `
 {
-  digitalWrite(MOTOR_IN1, HIGH);
-  digitalWrite(MOTOR_IN2, LOW);
+ `         digitalWrite(MOTOR_IN1, HIGH);
+  digitalWrite(MOTOR_IN2, LOW);              `
 }
 
-void motor_reverse(void)       // the function that will cause the motor to rotate ccw
+`           void motor_reverse(void)       // the function that will cause the motor to rotate ccw        `
 {
-  digitalWrite(MOTOR_IN1, LOW);
-  digitalWrite(MOTOR_IN2, HIGH);
+ `             digitalWrite(MOTOR_IN1, LOW);
+  digitalWrite(MOTOR_IN2, HIGH);                 `
 }
 
-void motor_stop(void)          // the function that will cause the motor to stop rotating
+`        void motor_stop(void)          // the function that will cause the motor to stop rotating              `
 {
-  digitalWrite(MOTOR_IN1, LOW);
+  `         digitalWrite(MOTOR_IN1, LOW);
   digitalWrite(MOTOR_IN2, LOW);
-}
+}           `
 
 
 
